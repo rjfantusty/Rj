@@ -132,7 +132,7 @@ tl.
         start:"40% top",
         end:"bottom top",
         scrub:1,
-        markers:true
+        
     }
    
    
@@ -205,7 +205,6 @@ tl.to("#stxt",{
         start:"20% top",
         end:"bottom top ",
         scrub:1,
-        markers:true
 
     
     }
