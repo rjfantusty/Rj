@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css?family=Moon Dance');
+@import url('https://fonts.googleapis.com/css?family=Source Code Pro');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Moon Dance;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:#14cf93
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+#flex{
+    position: relative;
+}
+
+#white{
+    width: 100%;
+    height: 100vh;
+    background-color: wheat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 19;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#white h1{
+    position: absolute;
+    font-size: 6vw;
+}
+#rj{
+    color:#14cf93;
+}
+#green{
+    width:100%;
+    height:100vh;
+    background-color: rgb(138, 228, 138);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 18;
+}
+
+#main{
+    width: 100%;
+    background-color: white;
+}
+
+#crd{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+
+#crd h1{
+    font-size: 11vw;
+}
+#lftxt{
+    position: absolute;
+    left: 15vw;
+    top: 23vh;
+    opacity: 1;
+}
+#rgtxt{
+    position: absolute;
+    right: 15vw;
+    bottom: 27vh;
+    opacity: 1;
+
+}
+
+#nv{
+    
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    top:0;
+    z-index: 16;
+    justify-content: space-between;
+}
+#contact{
+    width: 4vw;
+    height: 30vh;
+    position: fixed;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 3vw;
+}
+#logo{
+    width: 20vw;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#logo>h1{
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    white-space: nowrap;
+}
+
+#icon{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#icon lord-icon{
+    
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3vw;
+    position: relative;
+    right: 0;
+
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+#menu a:hover{
+    color:#14cf93
+}
+
+#first{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+#sec{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+}
+#third{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+#fourth{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+#slft{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+#srgt{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    
+}
+
+#stxt{
+    width: 40vw;
+    min-height: fit-content;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    color: white;
+    transition: all .2s linear;
+}
+#stxt h1{
+    font-size: 4vw;
+    padding-bottom: 10px;
+    color:#14cf93;
+}
+
+#stxt h3{
+    font-size: 2vw;
+    text-align: justify;
+
+}
+.simg{
+    width:22vw ;
+    height: 70vh;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom:10vh;
+    left:25vw;
+    transition: all .2s linear;
+    overflow: hidden;
+    border: 2px solid white;
+
+}
+
+.simg:hover{
+    z-index: 2;
+}
+#img1{
+    background-color: aquamarine;
+}
+
+#img2{
+    background-color: black;
+    
+}
+
+#idx{
+    width: 9vw;
+    height: 9vw;
+    position: fixed;
+    top: 85vh;
+    left: 2vw;
+    transform: translate(0,-50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    font-size: 8vw;
+    border-bottom: 5px solid white;
+    z-index: 16;
+}
+.num{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+#nums{
+    position: absolute;
+    top: 0%;
+}
+#flft{
+    width: 50%;
+    height: 100%;
+
+}
+#frgt{
+    width: 50%;
+    height: 100%;
+
+}
+#rl{
+    position: relative;
+        width: 100%;
+        height: 100%;
+}
+#box{
+    border-radius: 50% 50% 48% 52% / 65% 65% 35% 35% ;
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    top:49vh ;
+    right: 6vw;
+    transform: translate(0%,-50%);
+    overflow: hidden;
+
+}
+#box img{
+    width: 100%;
+    height: 100%;
+
+    
+}
+#txt{
+    text-align: left;
+    width: fit-content;
+    font-size:2.5vw;
+    letter-spacing: .5vw;
+    position: absolute;
+    transform: translate(0%,-50%);
+    top:45%;
+    color: white;
+}
+
+#txt h1,h2,h4{
+    font-family:Source Code Pro;
+}
+
+#arrow{
+    position: fixed;
+    right: 0px;
+    font-size: 2vw;
+    transform: translate(0%,-50%);
+    top: 75%;
+    width: 3vw;
+    color: white;
+    height: 10vw;
+    animation-name: scrl;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    z-index: 16;
+    
+}
+#arrow h3{
+    rotate: 90deg;
+    white-space: nowrap;
+}
+#cv{
+    text-decoration: none;
+    font-size: 4vw;
+    position: absolute;
+    top: 66vh;
+    color:#14cf93 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    border-radius: 10px;
+    border: 2px solid #14cf93;
+    padding-right: 10px;
+    left:0;
+
+}
+#cursor{
+    color: yellow;
+    font-size: 4vw;
+    animation: cur;
+    opacity: 1;
+    animation-name: cur;
+    animation-duration:.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes scrl{
+
+    0%{ top:75%;}
+    100%{top: 80%;}
+
+}
+@keyframes cur {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+#tlft{
+    width: 45vw;
+    height: 100vh;
+    position: relative;
+}
+#timg1{
+    width:15vw ;
+    height: 50vh;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom:35vh;
+    left:29vw;
+    overflow: hidden;
+    transition: all .3s linear;
+    border: 2px solid white;
+}
+#timg2{
+    width:15vw ;
+    height: 50vh;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    bottom:12vh;
+    left:12vw;
+    border: 2px solid white;
+    transition: all .3s linear;
+}
+.tani{
+    animation-name: tani;
+    animation-duration: 1s;
+    transition: position .5 linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+@keyframes tani {
+    0%{ scale:.98 }
+    100%{scale:1}
+}
+#trgt{
+    width: 55vw;
+    height: 100vh;
+    position: relative;
+}
+#trupr{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top:10vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#skill{
+    width:80%;
+    height: fit-content;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 2vw;
+    transition: all .1s linear;
+    
+}
+#nam{
+    width: 30%;
+}
+#nine{
+    width: 60%;
+    height: 5px;
+    background-color: rgb(165, 71, 219);
+    border-radius: 3px;
+}
+#eight{
+    width: 50%;
+    height: 5px;
+    background-color: rgb(165, 71, 219);
+    border-radius: 3px;
+}
+#seven{
+    width: 40%;
+    height: 5px;
+    background-color: rgb(165, 71, 219);
+    border-radius: 3px;
+}
+#trlwr{
+    width: 100%;
+    height: 50vh;
+    bottom: 0;
+    position: absolute;
+   
+}
+#crusall{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mySlides {display: none}
+#cru {vertical-align: middle;
+     height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  margin: auto;
+  position: relative;
+  background-color: rgb(82, 76, 76);
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  font-size: 2vw;
+
+  
+}
+.slideshow-container h5{
+     text-align: center;
+
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+#forlft{
+    width: 40%;
+    height: 100vh;
+    position: relative;
+
+}
+#forrgt{
+    width: 60%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    transition: all .2s linear;
+
+}
+
+#ctxt{
+    width: 60%;
+    height: 50%;
+    right: 0;
+    position: absolute;
+    top: 20.5vh;
+    color: white;
+    align-items: left;
+    transition: all .2s linear;
+
+}
+#cupr {
+    text-align: center;
+    font-size: 2vw;
+    padding-bottom: 10px;
+    margin-bottom: 5vh;
+    border-bottom: 3px solid white;
+}
+.clwr a{
+    font-size: 2vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap:1vw;
+    color: white;
+}
+.clwr a lord-icon{
+    width: 3vw;
+    height: 3vw;
+}
+#mail{
+    width: 60%;
+    height: 3vw;
+    place-content: "email";
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 2vw;
+}
+#name{
+    width: 60%;
+    height: 3vw;
+    place-content: "email";
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 2vw;
+}
+#text{
+    width: 60%;
+    height: 10vw;
+    place-content: "email";
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 2vw;
+}
+#fb{
+    width: 10vw;
+    height: 3vw;
+    place-content: "email";
+    border-radius: 20px;
+    padding:15px 10px;
+    text-align: center;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #14cf93;
+}
+
+#lst{
+    color: white;
+    position: absolute;
+
+    bottom: 3vh;
+    left: -4vw;
+    font-size: 3vw;
+}
+
+
+#img1 img{
+    height: 120%;
+    filter: grayscale(100) contrast(1.5
+    );
+    
+}
+#img2 img{
+    height: 100%;
+    position: absolute;
+    top: -5vh;
+    left:3vw;
+}
+#img3 img{
+    height: 100%;
+    position: absolute;
+    left: -4.5vw;
+}
+#timg1 img{
+    width: 100%;
+    position: absolute;
+    left: -1px;
+    top: -4px;
+    scale: 1.03;
+
+}
+#timg2 img{
+    width: 100%;
+}
+#btnn{
+    position: absolute;
+    white-space: nowrap;
+}
+
+@media(max-width:500px){
+    
+    
+    #logo {
+        
+        width: 40vw;
+    }
+
+    #logo h1{
+        font-size: 6vw;
+    }
+    #menu{
+        width: 50vw;
+        font-size: 5vw;
+    }
+    #first{
+        flex-direction: column;
+    }
+    #frgt{
+        width: 100vw;
+    }
+    #flft{
+        width: 100vw;
+    }
+    #box{
+        top: 40vh;
+        right: 17vh;
+        scale: 2;
+    }
+    #rl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    #txt{
+        text-align:center;
+        font-size: 6vw;
+        top:10vh
+        
+    }
+    #btnn {
+        top: -40vh;
+        left: 25vw;
+    
+    }
+    #btnn a{
+        font-size: 8vw;
+    }
+    #btnn a lord-icon{
+        scale: 2;
+        margin-right: 10px; 
+        margin-left: 5px;
+    }
+
+    #idx{
+        width: 15vw;
+        height: 7vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+        top: 95vh;
+        
+        
+    }
+    #nums{
+        font-size: 10vw;
+    }
+
+    #sec{
+        flex-direction: column;
+        
+    }
+    #slft{
+        width: 100vw;
+        
+
+    }
+    #srgt{
+        width: 100vw;
+        
+
+    }
+    #stxt{
+        top:65%;
+        width: 70%;
+        height: 70%;
+        left: 43%;
+
+    }
+    #stxt h1{
+      font-size:8vw;
+    }
+    #stxt h3{
+      font-size:6vw;
+    }
+    .simg{
+        width: 60%;
+        height: 70%;
+        bottom: 6vh;
+    }
+
+    #third{
+        flex-direction: column-reverse;
+
+    }
+    #tlft{
+        width: 100vw;
+        
+    }
+    #trgt{
+        width: 100vw;
+
+    }
+    #skill{
+        gap:5vw;
+    }
+    #trupr{
+        width: 100%;
+        top: 5vh;
+    }
+    #nam{
+        font-size: 5vw;
+    }
+    #trlwr{
+        bottom: -15vh;
+        height: 30vh;
+    }
+   
+    .slideshow-container {
+        min-width:90vw;
+    }
+    .slideshow-container h5{
+        font-size: 5vw;
+    }
+    #timg1{
+        width: 40vw;
+        height: 30vh;
+        bottom:1vh;
+        left:55vw
+
+
+    }
+    #timg2{
+        width: 40vw;
+        height: 30vh;
+        bottom:7vh
+
+    }
+    #fourth{
+        flex-direction: column;
+
+    }
+    #forlft{
+        width: 100vw;
+    }
+    #forrgt{
+        width: 100vw;
+        gap:2vh;
+    }
+    #ctxt{
+        text-align: center;
+        right: 20vw;
+        top: 15vh;
+    }
+   #cupr{
+    font-size: 5vw;
+    margin-bottom: 3vh;
+   }
+   .clwr a{
+    font-size: 6vw;
+    gap:2vw;
+    white-space: nowrap;
+   }
+   .clwr a lord-icon{
+    width: 6vw;
+    height: 6vw;
+   }
+
+   #text{
+    width: 80%;
+    height: 10vh;
+    font-size: 5vw;
+
+   }
+   #mail{
+    width: 80%;
+    height: 6vh;
+    font-size: 5vw;
+
+   }
+   #name{
+    width: 80%;
+    height: 6vh;
+    font-size: 5vw;
+
+   }
+   #fb{
+    width: 25vw;
+    height: 5vh;
+    font-size: 5vw;
+
+   }
+   #lst{
+    left: 25vw;
+    font-size: 6vw;
+    bottom: 2vh;
+   }
+   #contact{
+    width: 6vw;
+    font-size: 5vw;
+   }
+   #arrow{
+    font-size: 5vw;
+   }
+   .num{
+    height: 8vh;
+   }
+   #white h1 span{
+    font-size: 15vw;
+   }
+   #crd h1{
+    font-size: 20vw;
+   }
+   #lftxt{
+    left: 20vw;
+    top: 40vh;
+   }
+   #rgtxt{
+    font-size: 8vw;
+    right: 0vw;
+    bottom: 30vh;
+   }
+
+    
+}
